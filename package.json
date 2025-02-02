@@ -4,7 +4,9 @@
   "main": "init.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "order-service": "node order-service/orderService.js",
+    "mailer-service": "node mailer-service/mailerService.js",
+    "user-service": "node user-service/userService.js"
   },
   "keywords": [],
   "author": "",
