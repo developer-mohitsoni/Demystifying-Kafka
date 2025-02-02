@@ -5,7 +5,7 @@ const clientId = "init"; // Ye ek unique naam hai jo Kafka client ko diya jata h
 const brokers = ["localhost:9094"]; // Kafka broker jo localhost pe run ho raha hai
 
 // ✅ Kafka Client initialize kar rahe hain
-export const kafka = new Kafka({
+const kafka = new Kafka({
   clientId, // Client ka naam
   brokers, // Kafka broker list
 });
