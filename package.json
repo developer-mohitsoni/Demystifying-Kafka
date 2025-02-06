@@ -6,7 +6,8 @@
   "scripts": {
     "order-service": "node order-service/orderService.js",
     "mailer-service": "node mailer-service/mailerService.js",
-    "user-service": "node user-service/userService.js"
+    "user-service": "node user-service/userService.js",
+    "ac": "node autocannon.js"
   },
   "keywords": [],
   "author": "",
