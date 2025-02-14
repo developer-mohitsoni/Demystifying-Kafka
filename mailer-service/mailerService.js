@@ -10,7 +10,7 @@ class MailerService {
     // Kafka client create kar rahe hain
     this.kafka = new Kafka({
       clientId: "mailer-service", // Yeh consumer ka unique ID hoga
-      brokers: ["localhost:9094"], // Kafka broker ka address (localhost pe run kar raha hai)
+      brokers: ["localhost:9094", "localhost:9095", "localhost:9096"], // Kafka broker ka address (localhost pe run kar raha hai)
     });
 
     // Kafka consumer create kar rahe hain jo ek group ka part hoga

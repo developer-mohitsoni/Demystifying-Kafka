@@ -11,7 +11,7 @@ app.use(bodyParser.json()); // Body-parser middleware ko use kar rahe hain jo JS
 // Kafka Configuration
 const kafka = new Kafka({
   clientId: "order-service", // Kafka ke client ID ko "order-service" set kar rahe hain
-  brokers: ["localhost:9094"], // Kafka brokers ki list, yeh local setup pe chal raha hai
+  brokers: ["localhost:9094", "localhost:9095", "localhost:9096"], // Kafka brokers ki list, yeh local setup pe chal raha hai
 });
 
 // Producer ko create kar rahe hain jo Kafka me messages send karega

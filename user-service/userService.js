@@ -10,7 +10,7 @@ class UserService {
     // ✅ Kafka Instance Create Karna
     this.kafka = new Kafka({
       clientId: "user-service", // Yeh service ka unique naam hai jo Kafka me register hoga
-      brokers: ["localhost:9094"], // Yeh Kafka broker ka address hai (locally run ho raha hai)
+      brokers: ["localhost:9094", "localhost:9095", "localhost:9096"], // Yeh Kafka broker ka address hai (locally run ho raha hai)
     });
 
     // ✅ Kafka Consumer Initialize Karna
