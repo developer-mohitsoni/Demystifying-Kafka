@@ -2,7 +2,7 @@ import { Kafka } from "kafkajs"; // ✅ KafkaJS package import kar rahe hain
 
 // ✅ Kafka client ki identification aur broker ka setup
 const clientId = "init"; // Ye ek unique naam hai jo Kafka client ko diya jata hai
-const brokers = ["localhost:9094"]; // Kafka broker jo localhost pe run ho raha hai
+const brokers = ["localhost:9094", "localhost:9095", "localhost:9096"]; // Kafka broker jo localhost pe run ho raha hai
 
 // ✅ Kafka Client initialize kar rahe hain
 const kafka = new Kafka({
@@ -15,12 +15,12 @@ const topicsToCreate = [
   {
     name: "order.created", // Topic ka naam
     partitions: 3, // 3 partitions honge taaki load balancing ho sake
-    replicationFactor: 1, // Ek hi broker pe data store hoga (no redundancy)
+    replicationFactor: 3, // 3 brokers pe data store hoga
   },
   {
     name: "user.created",
     partitions: 1, // Ye sirf ek partition me rahega
-    replicationFactor: 1, // Iska bhi backup nahi hoga
+    replicationFactor: 3, // 3 brokers pe data store hoga
   },
 ];
 
