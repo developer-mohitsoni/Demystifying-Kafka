@@ -1,0 +1,24 @@
+{
+  "name": "lets-explore-kafka",
+  "version": "1.0.0",
+  "main": "init.js",
+  "type": "module",
+  "scripts": {
+    "order-service": "node order-service/orderService.js",
+    "mailer-service": "node mailer-service/mailerService.js",
+    "user-service": "node user-service/userService.js",
+    "ac": "node autocannon.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autocannon": "^8.0.0",
+    "axios": "^1.7.9",
+    "body-parser": "^2.0.2",
+    "express": "^5.0.1",
+    "kafkajs": "^2.2.4",
+    "nanoid": "^5.0.9"
+  }
+}
